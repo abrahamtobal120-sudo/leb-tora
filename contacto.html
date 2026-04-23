@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2B31E5">
+
+  <title>Contacto · Leb Torá</title>
+  <meta name="description" content="Escríbenos a gmajbetdavid@gmail.com. ¿Preguntas, propuestas o colaboraciones? Estamos para escucharte.">
+  <link rel="canonical" href="https://gmajbetdavid.com/contacto.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto · Leb Torá">
+  <meta property="og:description" content="Escríbenos. Estamos para escucharte.">
+  <meta property="og:image" content="https://gmajbetdavid.com/icons/icon-512.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+
+    <section class="page-hero">
+      <h1>Contacto</h1>
+      <p class="page-hero-sub">¿Preguntas o propuestas? Escríbenos.</p>
+    </section>
+
+    <section class="article">
+      <div class="container-narrow">
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <div class="contact-card-label">Email</div>
+            <div class="contact-card-value">
+              <a href="mailto:gmajbetdavid@gmail.com">gmajbetdavid@gmail.com</a>
+            </div>
+            <div class="contact-card-location">
+              Polanco, Ciudad de México
+            </div>
+          </div>
+
+          <!--
+            IMPORTANTE: Reemplazar "TU_ID_DE_FORMSPREE" con tu endpoint de Formspree.
+            1. Ve a https://formspree.io y regístrate gratis
+            2. Crea un formulario nuevo con destino gmajbetdavid@gmail.com
+            3. Copia el endpoint (ej: https://formspree.io/f/xyzabc123)
+            4. Reemplaza la acción del formulario con ese link
+          -->
+          <form class="contact-form" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-full btn-xl">Enviar mensaje</button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/layout.js"></script>
+</body>
+</html>
